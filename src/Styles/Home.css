@@ -1,0 +1,25 @@
+#category a {
+  color: white;
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+#category {
+  display: flex;
+  width: 650px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#category-container {
+  position: fixed;
+  width: 100vw;
+  bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+.fullHW {
+  width: 100vw;
+  height: 100vh;
+}
