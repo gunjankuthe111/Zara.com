@@ -1,0 +1,27 @@
+#loginPage{
+    width:100vw;
+    height: 100vh;
+}
+#loginContainer{
+    width: 250px;
+    margin: auto;
+    margin-top: 200px;
+}
+#loginContainer input{
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid;
+    font-size: large;
+}
+#loginPage button{
+    width: 250px;
+    height: 40px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    border: none;
+}
+#loginContainer input:focus{
+    outline: none;
+}
