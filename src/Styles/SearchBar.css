@@ -1,0 +1,25 @@
+
+#searchBar{
+    margin-top: 80px;
+    /* border: 1px solid; */
+    width: 100vw;
+}
+#searchBar input{
+    width: 70%;
+    height: 30px;
+    font-size: 120%;
+    margin-top: 20px;
+}
+#searchBar>div:last-child{
+    margin: auto;
+    width: 80%;
+    margin-top: 50px;
+    border: 1px solid;
+}
+#searchBar button{
+    font-weight: bold;
+    border: none;
+    background: none;
+    font-size: 15px;
+    /* cursor: pointer; */
+}

@@ -6,6 +6,8 @@ import PlacementExample from './Components/SideBar';
 // import Kids from './pages/Kids';
 // import Womens from './pages/Womens';
 import Login from "./pages/Login"
+import SearchBar from './pages/SearchBar';
+import CategoryPage from './Styles/CategoryPage';
 
 function App() {
   return (
@@ -13,10 +15,12 @@ function App() {
       {/* <Mens/> */}
       {/* <Womens/> */}
       {/* <Kids/> */}
-      {/* <Navbar/> */}
+      <Navbar/>
       {/* <Login/> */}
-      {/* <Footer/> */}
-      <PlacementExample/>
+      {/* <SearchBar/> */}
+      <CategoryPage/>
+      <Footer/>
+      {/* <PlacementExample/> */}
     </div>
   );
 }
