@@ -1,9 +1,10 @@
-#category a {
-  color: white;
-  text-decoration: none;
-}
 li {
   list-style: none;
+  color: white;
+}
+/* #category a {
+  color: white;
+  text-decoration: none;
 }
 
 #category {
@@ -22,4 +23,4 @@ li {
 .fullHW {
   width: 100vw;
   height: 100vh;
-}
+} */

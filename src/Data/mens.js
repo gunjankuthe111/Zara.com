@@ -1,4 +1,4 @@
-const mensData = [
+export const mensData = [
   {
     brand: "NIKE",
     name: "Swoosh Oval T-Shirt",
