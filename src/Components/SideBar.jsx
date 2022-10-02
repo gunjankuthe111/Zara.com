@@ -1,60 +1,82 @@
-// export default function SideBar(){
-//     return 
 
-import { Button, Drawer, DrawerBody, DrawerContent, DrawerHeader, DrawerOverlay, Radio, RadioGroup, Stack, useDisclosure } from "@chakra-ui/react";
-import { useState } from "react";
+import {CloseIcon, HamburgerIcon} from "@chakra-ui/icons";
+import {
+  Box,
+  Drawer,
+  DrawerBody,
+  DrawerContent,
+  DrawerHeader,
+  DrawerOverlay,
+  Flex,
+  useDisclosure,
+  VStack,
+  Button,
+} from "@chakra-ui/react";
+import React, { useContext } from "react";
+import { useNavigate} from "react-router-dom";
+import { CategoryContext } from "../Context/CategoryContext";
+import {mensData} from "../Data/mens";
+import {womensData} from "../Data/womens";
+import {kidsData} from "../Data/kids";
 
-
-// }
-// export default function PlacementExample() {
-//   const {isOpen, onOpen, onClose} = useDisclosure();
-//   const [state,setState] = useState(true);
-
-//   console.log(onOpen)
-//   return (
-//     <>
-//       <Button colorScheme="blue" onClick={() => setState(!state)}>
-//         {state?"Open":"close"}
-//       </Button>
-//       <Drawer placement={"left"} onClose={state} isOpen={!state}>
-//         <DrawerOverlay />
-//         <DrawerContent>
-//           <DrawerHeader borderBottomWidth="1px">Basic Drawer</DrawerHeader>
-//           <DrawerBody>
-//             <p>Some contents...</p>
-//             <p>Some contents...</p>
-//             <p>Some contents...</p>
-//           </DrawerBody>
-//         </DrawerContent>
-//       </Drawer>
-//     </>
-//   );
-// }
-export default function PlacementExample() {
+export default function SideBar() {
+  const {handleData} = useContext(CategoryContext)
   const {isOpen, onOpen, onClose} = useDisclosure();
-  const [placement, setPlacement] = useState("left");
+  const navigate = useNavigate();
 
   return (
     <>
-      <RadioGroup defaultValue={placement} onChange={setPlacement}>
-        <Stack direction="row" mb="4">
-          <Radio value="top">Top</Radio>
-          <Radio value="right">Right</Radio>
-          <Radio value="bottom">Bottom</Radio>
-          <Radio value="left">Left</Radio>
-        </Stack>
-      </RadioGroup>
-      <Button colorScheme="blue" onClick={onOpen}>
-        Open
-      </Button>
-      <Drawer placement={placement} onClose={onClose} isOpen={isOpen}>
+      <HamburgerIcon boxSize="30px" onClick={onOpen} />
+      <Drawer placement="left" onClose={onClose} isOpen={isOpen}>
         <DrawerOverlay />
         <DrawerContent>
-          <DrawerHeader borderBottomWidth="1px">Basic Drawer</DrawerHeader>
+          <Flex pr="20px" justifyContent="space-between" alignItems="center">
+            <DrawerHeader borderBottomWidth="1px">Menu</DrawerHeader>
+            <CloseIcon onClick={onClose} />
+          </Flex>
           <DrawerBody>
-            <p>Some contents...</p>
-            <p>Some contents...</p>
-            <p>Some contents...</p>
+            <VStack>
+              <Box>
+                <Button
+                  bg="none"
+                  _hover={{color: "red"}}
+                  onClick={() => {
+                    handleData(mensData)
+                    navigate(`/category/mens`)
+                    onClose()
+                  }}
+                >
+                  Men Products
+                </Button>
+              </Box>
+              <Box>
+                <Button
+                  bg="none"
+                  _hover={{color: "red"}}
+                  onClick={() => {
+                    handleData(womensData);
+                    navigate("/category/womens")
+                    onClose()
+                  }}
+                >
+                  Women Products
+                </Button>
+              </Box>
+              <Box>
+                <Button
+                  bg="none"
+                  _hover={{color: "red"}}
+                  onClick={() =>{
+                    handleData(kidsData);
+                     navigate("/category/kids")
+                     onClose()
+                    }}
+                >
+                  Kids Products
+                </Button>
+              </Box>
+              <Box></Box>
+            </VStack>
           </DrawerBody>
         </DrawerContent>
       </Drawer>
