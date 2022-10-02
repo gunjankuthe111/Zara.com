@@ -38,30 +38,36 @@ export default function CartPage() {
   }
   return (
     <Container pt="15%" maxW="100vw" h="100vh">
-      <TableContainer w="80%" margin="auto">
+      <TableContainer w={{lg: "60%", md: "80%",base:"95%"}} margin="auto">
         <Table colorScheme="teal">
           <TableCaption>Total Products present in the Cart</TableCaption>
           <Thead>
             <Tr background="black">
               <Th color="white">Name</Th>
               <Th color="white">Price</Th>
-              <Th color="white">In Dollers</Th>
+              <Th color="white"></Th>
             </Tr>
           </Thead>
           <Tbody>
-            {data.map((ele,i) => {
-                return (
-                  <Tr key={ele.productID}>
-                    <Td>{ele.name}</Td>
-                    <Td>{ele.price}</Td>
-                    <Td>
-                      <Button color="white" backgroundColor="teal">Save for Later</Button>
-                      <Button onClick={()=>handleRemove(i)} backgroundColor="Red" ml="5px">
-                        Remove
-                      </Button>
-                    </Td>
-                  </Tr>
-                );
+            {data.map((ele, i) => {
+              return (
+                <Tr key={ele.productID}>
+                  <Td>{ele.name}</Td>
+                  <Td>{ele.price}</Td>
+                  <Td>
+                    <Button color="white" backgroundColor="teal">
+                      Save for Later
+                    </Button>
+                    <Button
+                      onClick={() => handleRemove(i)}
+                      backgroundColor="Red"
+                      ml="5px"
+                    >
+                      Remove
+                    </Button>
+                  </Td>
+                </Tr>
+              );
             })}
           </Tbody>
           <Tfoot>
@@ -70,7 +76,14 @@ export default function CartPage() {
               <Th color="white">
                 {data.reduce((a, c) => a + c.price, 0).toFixed(2)}
               </Th>
-              <Th textAlign="center"><Button onClick={()=>navigate("/checkout")} backgroundColor="white" >Checkout</Button></Th>
+              <Th textAlign="center">
+                <Button
+                  onClick={() => navigate("/checkout")}
+                  backgroundColor="white"
+                >
+                  Checkout
+                </Button>
+              </Th>
             </Tr>
           </Tfoot>
         </Table>
