@@ -90,7 +90,7 @@ Clone of a Spanish multi-national E-commerce website. The website has SignUp, Si
 <h2>Project Outcome</h2>
 <p>Gained great experience in React,</p>
 <p>Learned Chakra UI,</p>
-<p>Learn different libraries,</p>
+<p>Learned different libraries,</p>
 <p>Project presentation skill improved.</p>
 
 <h2>ScreenShots<h2>
