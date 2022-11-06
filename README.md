@@ -68,3 +68,83 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+<h1 align="center"> Hi,<img style="width: 35px;" src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" alt=""> There
+
+# Zara.com
+Clone of a Spanish multi-national E-commerce website. The website has SignUp, SignIn, Add to cart, Remove from Cart and Check out functionality.
+
+<h2 align="left"><i>Tech Stack Used</i></h2>
+<div align="left">
+<img alt="HTML5" src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"/>
+<img alt="CSS3" src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white"/> 
+<img alt="JavaScript" src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/>
+</div>
+
+<h2 align="left"><i>Deployed link</i></h2>
+  <a href="https://the-awesome-gunjankuthe111-site.netlify.app/" target="_blank">
+  <img alt="Netlify" src="https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white"/>
+  </a>
+<h3 align="left"><a href="https://the-awesome-gunjankuthe111-site.netlify.app/" target="_blank">Zara.com</a></h3>
+
+<h2>Project Outcome</h2>
+<p>Gained great experience in React,</p>
+<p>Learned Chakra UI,</p>
+<p>Learn different libraries,</p>
+<p>Project presentation skill improved.</p>
+
+<h2>ScreenShots<h2>
+
+<h4>Home Page</h4>
+<p></p>
+ <div style="display: grid; grid-template-columns: repeat(2,1fr); gap:20px " >
+  <img style="width: 100%;" src="https://github.com/gunjankuthe111/Zara.com/blob/main/ScreenShots/HomePage.png" alt="">
+ </div>
+ 
+ <h4>LogIn Page</h4>
+<p></p>
+ <div style="display: grid; grid-template-columns: repeat(2,1fr); gap:20px " >
+  <img style="width: 100%;" src="https://github.com/gunjankuthe111/Zara.com/blob/main/ScreenShots/LogInPage.png" alt="">
+ </div>
+ <h4>Womens Page</h4>
+<p></p>
+ <div style="display: grid; grid-template-columns: repeat(2,1fr); gap:20px " >
+  <img style="width: 100%;" src="https://github.com/gunjankuthe111/Zara.com/blob/main/ScreenShots/WomensPage.png" alt="">
+ </div>
+ 
+ <h4>Mens Page</h4>
+<p></p>
+ <div style="display: grid; grid-template-columns: repeat(2,1fr); gap:20px " >
+  <img style="width: 100%;" src="https://github.com/gunjankuthe111/Zara.com/blob/main/ScreenShots/MensPage.png" alt="">
+ </div>
+ 
+ <h4>Kids Page</h4>
+<p></p>
+ <div style="display: grid; grid-template-columns: repeat(2,1fr); gap:20px " >
+  <img style="width: 100%;" src="https://github.com/gunjankuthe111/Zara.com/blob/main/ScreenShots/KidsPage.png" alt="">
+ </div>
+ 
+  <h4>Product Page</h4>
+<p></p>
+ <div style="display: grid; grid-template-columns: repeat(2,1fr); gap:20px " >
+  <img style="width: 100%;" src="https://github.com/gunjankuthe111/Zara.com/blob/main/ScreenShots/ProductPage.png" alt="">
+ </div>
+  <h4>Cart Page</h4>
+<p></p>
+ <div style="display: grid; grid-template-columns: repeat(2,1fr); gap:20px " >
+  <img style="width: 100%;" src="https://github.com/gunjankuthe111/Zara.com/blob/main/ScreenShots/CartPage.png" alt="">
+ </div>
+ <h4>CheckOut Page</h4>
+<p></p>
+ <div style="display: grid; grid-template-columns: repeat(2,1fr); gap:20px " >
+  <img style="width: 100%;" src="https://github.com/gunjankuthe111/Zara.com/blob/main/ScreenShots/CheckoutPage.png" alt="">
+ </div>
+ <h4>Footer</h4>
+<p></p>
+ <div style="display: grid; grid-template-columns: repeat(2,1fr); gap:20px " >
+  <img style="width: 100%;" src="https://github.com/gunjankuthe111/Zara.com/blob/main/ScreenShots/FooterPage.png" alt="">
+ </div>
+
+
+
+<h1 align="center"> Thank You !!!</h1>
